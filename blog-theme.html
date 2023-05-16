@@ -23,7 +23,7 @@
     }
     ul{
         padding: 10px;
-        background: rgba(104, 10, 117, 0.5);
+        background: rgba(144, 82, 117, 0.5);
     }
     li{
         display: inline;
@@ -43,12 +43,57 @@
     a{
         font-size: 18px;
         color: #ffffff;
+        text-decoration: none;
+    }
+    a:hover{
+        color: #ca73a0;
+        background-color: #ffffff;
+        padding: 10px 10px;
     }
 
     h2,p{
        color: #ffffff; 
        text-align: center;
     }
+    article{
+        max-width: 500px;
+        padding: 20px;
+        margin: 0 auto;
+
+    }
+    button{
+        background-color:rgb(157, 52, 111);
+        color: #ffffff;
+        border: none;
+        padding: 10px 20px;
+        font-weight: bolder;
+        cursor: pointer;
+    }
+    button:hover{
+      background-color: #ca73a0;  
+    }
+@media (max-width: 500px) {
+    h1{
+        font-size: 36px;
+        padding: 5px;
+    }
+    li{
+        padding:5px;
+        display: block;
+    }
+    a:hover{
+        background-color: #ffffff;
+        padding: 10px 50px;
+    }
+    button{
+        display: block;
+        margin: 0 auto;
+         font-size: 18px;
+         padding: 10px 80px;
+    }
+}
+
+
 </style>
 <body>
     <header>
@@ -85,6 +130,11 @@
             biodiesel Portland High Life cray tumblr retro. </p>
             <button> Like </button>
     </article>
+    <script>
+        $("button").on("click", function () {
+            alert("clicked!")
+        });
+    </script>
     
 </body>
 </html>
